@@ -1,5 +1,6 @@
 # Boyang Wang
 # Lasted Modified: May 8th, 2020 
+# Email: wang2ba@ucmail.uc.edu
 
 This folder includes additional information that may not be included in the original paper due to space limitation. 
 
@@ -16,3 +17,8 @@ You can find the parameters we used in adaptive padding in the defense.
 You can find some pictures of our data collection tool (designed by Sean Kennedy). 
 
 You can find a picture of GPU machines we used in our lab for the data anlysis in this study (2 Titans and 1 1070). 
+
+You can find two short videos when the data collection tool was running automatically. The links of the two videos can be found below: 
+
+Video 1: https://ceas.mediaspace.kaltura.com/media/DeepVCFingerprinting_Demo_Short/1_u63ny2jf
+Video 2: https://ceas.mediaspace.kaltura.com/media/DeepVCFingerprinting_Demo_Long_02152019/1_6wbejrx2
