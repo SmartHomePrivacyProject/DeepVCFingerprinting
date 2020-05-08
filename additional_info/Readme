@@ -2,6 +2,8 @@
 # Lasted Modified: May 8th, 2020 
 # Email: wang2ba@ucmail.uc.edu
 
+Our research findings about voice command fingerprinting on smart speakers will be published by The 13th ACM Conference on Security and Privacy in Wireless and Mobile Networks (ACM WiSec 2020). 
+
 This folder includes additional information that may not be included in the original paper due to space limitation. 
 
 You can find the list of 100 voice commands we used in the closed-world setting of Amazon Echo dataset.  
