@@ -3,6 +3,12 @@
 
 This folder includes additional information that may not be included in the original paper due to space limitation. 
 
-You can the list of 100 voice commands we used in the closed-world setting of Amazon Echo dataset.  
+You can find the list of 100 voice commands we used in the closed-world setting of Amazon Echo dataset.  
 
 You can find the list of 100 voice commands we used in the open-world setting of Amazon Echo dataset. 
+
+You can find the structures of neural networks we used in our evaluation. 
+
+You can find the tuned hyperparameters for neural networks. 
+
+You can find the parameters we used in adaptive padding in the defense.  
