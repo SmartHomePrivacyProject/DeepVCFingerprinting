@@ -3,8 +3,8 @@ This folder constains the code for performing Voice Command Fingerprinting Attac
 
 The description of the files as shown below:
 
---root
-    --models
+--root  
+    --models  
     --tools
     --paramsSearch
     --nFold.py
