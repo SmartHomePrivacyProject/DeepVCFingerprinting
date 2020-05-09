@@ -12,7 +12,7 @@ This repository contains separate directories for the attack, defense, voice tra
 
 #### Attack
 
-![attack model](attack model.png)
+![attack model](https://github.com/SmartHomePrivacyProject/DeepVCFingerprinting/blob/master/attack%20model.png)
 
 The ```attack``` directory contains the code for the deep learning classification models, data preparation of the input to the models, and some related utility functions.
 
@@ -22,7 +22,7 @@ The `defense` directory contains the code for the proof-of-concept defense again
 
 #### Voice Traffic Collection Tool
 
-![collection tool](collection tool.png)
+![collection tool](https://github.com/SmartHomePrivacyProject/DeepVCFingerprinting/blob/master/collection%20tool.png)
 
 The ```collection_tool``` directory contains the code and setup instructions for the collection tool that we use to collect our voice traffic data.  There are also utilities to generate synthetic voice audio files that use text-to-speech APIs and the list of common smart speaker queries in CSV format.  
 
