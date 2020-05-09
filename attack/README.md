@@ -1,19 +1,28 @@
 ## Description
 This folder constains the code for performing Voice Command Fingerprinting Attack.
 
-The description of the files as shown below:
+The file structure are shown belwo:
 
---root  
-    --models  
-    --tools
-    --paramsSearch
-    --nFold.py
-    --ensemble.py
-    --runBatches.py
-    --runDefense.py
-    --runOpenWorld.py
-    --README.md
-    --requirement.txt
+attack  
+├── ensemble.py  
+├── models  
+│   ├── cnn.py  
+│   ├── cudnnLstm.py  
+│   ├── lstm.py  
+│   └── sae.py  
+├── nFold.py  
+├── README.md  
+├── runBatches.py  
+├── runDefense.py  
+├── runOpenWorld.py  
+├── tools  
+│   ├── prepareData4OpenWorld.py  
+│   ├── prepareDataNum.py  
+│   ├── prepareDataPerson.py  
+│   └── prepareData.py  
+└── writeRes.py  
+
+The description of the files as shown below:
 
 ## Usage
 If you want to reproduce the experiments results, you can call command:
