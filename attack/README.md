@@ -3,47 +3,44 @@ This folder constains the code for performing Voice Command Fingerprinting Attac
 
 ### The file structure are shown belwo:
 
-attack
-├── call.sh
-├── experiments
-│   ├── ensemble.py
-│   ├── nFold.py
-│   ├── runDefense.py
-│   └── runOpenWorld.py
-├── models
-│   ├── cnn.py
-│   ├── cudnnLstm.py
-│   ├── lstm.py
-│   └── sae.py
-├── paramsSearch
-│   ├── cnn-keras
-│   │   ├── cnn-keras.py
-│   │   ├── config_pai.yml
-│   │   ├── config.yml
-│   │   └── search_space.json
-│   ├── lstm-keras
-│   │   ├── config_pai.yml
-│   │   ├── config.yml
-│   │   ├── lstm-keras.py
-│   │   └── search_space.json
-│   └── sae-keras
-│       ├── config_pai.yml
-│       ├── config.yml
-│       ├── lstm-keras.py
-│       ├── modelDir
-│       │   └── lstm_weights_best.hdf5
-│       ├── sae-keras.py
-│       └── search_space.json
-├── README.md
-├── requirements.txt
-└── tools
-    ├── common_use.py
-    ├── fileUtils.py
-    ├── prepareData4OpenWorld.py
-    ├── prepareDataNum.py
-    ├── prepareDataPerson.py
-    ├── prepareData.py
-    └── writeRes.py  
+attack  
+├── call.sh  
+├── experiments  
+│   ├── ensemble.py  
+│   ├── nFold.py  
+│   ├── runDefense.py  
+│   └── runOpenWorld.py  
+├── models  
+│   ├── cnn.py  
+│   ├── cudnnLstm.py  
+│   ├── lstm.py  
+│   └── sae.py  
+├── paramsSearch  
+│   ├── cnn-keras  
+│   │   ├── cnn-keras.py  
+│   │   ├── config_pai.yml  
+│   │   ├── config.yml  
+│   │   └── search_space.json  
+│   ├── lstm-keras  
+│   │   ├── config_pai.yml  
+│   │   ├── config.yml  
+│   │   ├── lstm-keras.py  
+│   │   └── search_space.json  
+│   └── sae-keras  
+│       ├── config_pai.yml  
+│       ├── config.yml   
+│       ├── sae-keras.py  
+│       └── search_space.json  
+├── README.md  
+├── requirements.txt  
+└── tools  
+    ├── common_use.py  
+    ├── fileUtils.py  
+    ├── prepareData4OpenWorld.py  
+    ├── prepareDataNum.py  
+    ├── prepareDataPerson.py  
+    ├── prepareData.py  
+    └── writeRes.py    
 
 ### The description of the files as shown below:
 
