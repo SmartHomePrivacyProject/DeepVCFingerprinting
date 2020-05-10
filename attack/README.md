@@ -51,7 +51,7 @@ In ./searchParams, those code are for searching parameters for DNNs
 File call.sh is used to facility you running with those experiments
 
 ## Usage
-If you want to reproduce the experiments results, you can call command:
+### If you want to reproduce the experiments results, you can call command:
 * nfold test
     ./call.sh experiments/nfold.py 
 * ensemble test
@@ -61,5 +61,5 @@ If you want to reproduce the experiments results, you can call command:
 * Open-world test
     ./call.sh experiments/runOpenWorld.py 
     
-if you want to search parameters for the neural network, you can call command:  
-nnictl create --config the_config_file_for_the_DNN_you_choose
+### if you want to search parameters for the neural network, you can call command:  
+* nnictl create --config the_config_file_for_the_DNN_you_choose
