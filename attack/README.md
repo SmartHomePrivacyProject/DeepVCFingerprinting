@@ -28,19 +28,20 @@ attack
 │   │   └── search_space.json  
 │   └── sae-keras  
 │       ├── config_pai.yml  
-│       ├── config.yml   
+│       ├── config.yml  
 │       ├── sae-keras.py  
 │       └── search_space.json  
+└── tools  
+|   ├── common_use.py  
+|   ├── fileUtils.py  
+|   ├── prepareData4OpenWorld.py  
+|   ├── prepareDataNum.py  
+|   ├── prepareDataPerson.py  
+|   ├── prepareData.py  
+|   └── writeRes.py  
 ├── README.md  
 ├── requirements.txt  
-└── tools  
-    ├── common_use.py  
-    ├── fileUtils.py  
-    ├── prepareData4OpenWorld.py  
-    ├── prepareDataNum.py  
-    ├── prepareDataPerson.py  
-    ├── prepareData.py  
-    └── writeRes.py    
+
 
 ### The description of the files as shown below:
 
