@@ -48,17 +48,18 @@ All DNN model definition file are in ./models
 In ./tools, those code are used for help preprocessing the data and other support functionalities
 In ./expriments, those code are for running different experiments
 In ./searchParams, those code are for searching parameters for DNNs
+File call.sh is used to facility you running with those experiments
 
 ## Usage
 If you want to reproduce the experiments results, you can call command:
 * nfold test
-
+    ./call.sh experiments/nfold.py 
 * ensemble test
-
+    ./call.sh experiments/ensemble.py
 * Defense test
-
+    ./call.sh experiments/runDefense.py 
 * Open-world test
-
-
-if you want to search parameters for the neural network, you can call command:
+    ./call.sh experiments/runOpenWorld.py 
+    
+if you want to search parameters for the neural network, you can call command:  
 nnictl create --config the_config_file_for_the_DNN_you_choose
