@@ -1,0 +1,20 @@
+{
+    "optimizer":{"_type":"choice","_value":["Adam", "SGD", "Adamax", "Adadelta"]},
+    "learning_rate":{"_type":"choice","_value":[0.005, 0.01, 0.05, 0.1]},
+    "dropout_rate1":{"_type": "choice", "_value":[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+    "dropout_rate2":{"_type": "choice", "_value":[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+    "dropout_rate3":{"_type": "choice", "_value":[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+    "dropout_rate4":{"_type": "choice", "_value":[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+    "dropout_rate5":{"_type": "choice", "_value":[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+    "batch_size":{"_type":"choice","_value":[50, 70, 90, 110, 130, 150, 170]},
+    "data_dim":{"_type":"choice", "_value":[250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 575, 600]},
+    "layer1":{"_type":"choice", "_value":[90, 110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310]},
+    "layer2":{"_type":"choice", "_value":[90, 110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310]},
+    "layer3":{"_type":"choice", "_value":[90, 110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310]},
+    "layer4":{"_type":"choice", "_value":[90, 110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310]},
+    "layer5":{"_type":"choice", "_value":[90, 110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310]},
+    "dense1":{"_type":"choice", "_value":[70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190]},
+    "dense2":{"_type":"choice", "_value":[70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190]},
+    "dense1_act":{"_type":"choice","_value":["softsign", "tanh", "elu", "selu"]},
+    "dense2_act":{"_type":"choice","_value":["softsign", "tanh", "elu", "selu"]}
+}

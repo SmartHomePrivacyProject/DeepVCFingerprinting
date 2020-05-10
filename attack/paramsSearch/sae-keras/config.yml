@@ -1,0 +1,21 @@
+authorName: default
+experimentName: example_mnist-keras
+trialConcurrency: 1
+maxExecDuration: 100h
+maxTrialNum: 30
+#choice: local, remote, pai
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+#choice: true, false
+useAnnotation: false
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner, MetisTuner
+  #SMAC (SMAC should be installed through nnictl)
+  builtinTunerName: Evolution
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: maximize
+trial:
+  command: ../run.sh sae-keras.py -i /home/carl007/work_dir/data/gamma_100/gamma -d onlyOrder -o test -m onlyIncoming -v
+  codeDir: .
+  gpuNum: 0
