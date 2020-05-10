@@ -45,11 +45,11 @@ attack
 
 ### The description of the files as shown below:
 
-All DNN model definition file are in ./models
-In ./tools, those code are used for help preprocessing the data and other support functionalities
-In ./expriments, those code are for running different experiments
-In ./searchParams, those code are for searching parameters for DNNs
-File call.sh is used to facility you running with those experiments
+All DNN model definition file are in ./models  
+* In ./tools, those code are used for help preprocessing the data and other support functionalities
+* In ./expriments, those code are for running different experiments
+* In ./searchParams, those code are for searching parameters for DNNs
+* File call.sh is used to facility you running with those experiments
 
 ## Usage
 ### If you want to reproduce the experiments results, you can call command:
