@@ -31,7 +31,10 @@ from keras.utils import np_utils
 
 import nni
 
-sys.path.append('/home/carl007/work_dir/echo_proj_phase_2/src/bin')
+modelsDir = os.getenv('MODELS_DIR')
+toolsDir = os.getenv('TOOLS_DIR')
+sys.path.append(modelsDir)
+sys.path.append(toolsDir)
 from prepareData import loadTrainAndTestData
 import cudnnLstm
 import basicSetting

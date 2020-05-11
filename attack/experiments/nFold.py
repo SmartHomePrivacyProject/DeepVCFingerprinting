@@ -270,7 +270,7 @@ def parseOpts(argv):
     parser.add_argument('-n', '--nFold', default=5, help='choose from onlyOrder/both')
     parser.add_argument('-o', '--output', default='test_res', help='path to store results')
     parser.add_argument('-v', '--verbose', action='store_true', help='')
-    parser.add_argument('-m', '--mode', help='')
+    parser.add_argument('-m', '--mode', default='onlyIncoming', help='choose to use onlyIncoming or all')
     parser.add_argument('-p', '--plotModel', action='store_true', help='')
     opts = parser.parse_args()
     return opts

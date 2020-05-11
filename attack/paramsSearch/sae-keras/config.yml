@@ -16,6 +16,6 @@ tuner:
     #choice: maximize, minimize
     optimize_mode: maximize
 trial:
-  command: ../run.sh sae-keras.py -i /home/carl007/work_dir/data/gamma_100/gamma -d onlyOrder -o test -m onlyIncoming -v
+  command: ../../call.sh sae-keras.py -i /home/carl007/work_dir/data/gamma_100/gamma -d onlyOrder -o test -m onlyIncoming -v
   codeDir: .
   gpuNum: 0

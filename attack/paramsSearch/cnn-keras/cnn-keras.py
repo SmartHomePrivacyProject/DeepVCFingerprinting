@@ -29,7 +29,10 @@ from sklearn.model_selection import train_test_split
 
 import nni
 
-sys.path.append('/home/carl007/work_dir/echo_proj_phase_2/src/bin')
+modelsDir = os.getenv('MODELS_DIR')
+toolsDir = os.getenv('TOOLS_DIR')
+sys.path.append(modelsDir)
+sys.path.append(toolsDir)
 import prepareData
 import cnn
 import basicSetting
