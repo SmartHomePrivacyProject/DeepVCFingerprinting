@@ -1,7 +1,7 @@
 ## Description
-This folder constains the code for performing Voice Command Fingerprinting Attack.
+This folder contains the code for performing Voice Command Fingerprinting Attack.
 
-### The file structure are shown below:
+### The file structure is shown below:
 
 attack  
 ├── call.sh  
