@@ -30,6 +30,10 @@ The ```collection_tool``` directory contains the code and setup instructions for
 
 The `datasets` has information about where you can find and download the datasets.
 
+#### Additional Information
+
+The `additional_info` has information about the structures of neural networks, lists of voice commands we studied, tuned hyperparameters.  
+
 ## Requirements
 
 This project is entirely written in Python 3.  Some third party libraries are necessary to run the code.  
@@ -42,4 +46,4 @@ See the project's directories for usage information.
 
 When reporting results that use the dataset or code in this repository, please cite:
 
-Chenggang Wang, Sean Kennedy, Haipeng Li, King Hudson, Gowtham Atluri, Wuetao Wei, Wenhai Sun, Boyang Wang, *“Fingerprinting Encrypted Voice Traffic on Smart Speakers with Deep Learning,”* ACM Conference on Security and Privacy in Wireless and Mobile Network (**ACM WiSec 2020**), July, 2020. (The first two authors contribute equally in this paper) 
+Chenggang Wang, Sean Kennedy, Haipeng Li, King Hudson, Gowtham Atluri, Xuetao Wei, Wenhai Sun, Boyang Wang, *“Fingerprinting Encrypted Voice Traffic on Smart Speakers with Deep Learning,”* ACM Conference on Security and Privacy in Wireless and Mobile Network (**ACM WiSec 2020**), July, 2020. (The first two authors contribute equally in this paper) 
