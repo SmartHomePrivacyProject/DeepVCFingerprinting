@@ -47,3 +47,9 @@ See the project's directories for usage information.
 When reporting results that use the dataset or code in this repository, please cite:
 
 Chenggang Wang, Sean Kennedy, Haipeng Li, King Hudson, Gowtham Atluri, Xuetao Wei, Wenhai Sun, Boyang Wang, *“Fingerprinting Encrypted Voice Traffic on Smart Speakers with Deep Learning,”* ACM Conference on Security and Privacy in Wireless and Mobile Network (**ACM WiSec 2020**), July, 2020. (The first two authors contribute equally in this paper) 
+
+## Contacts
+
+Chenggang Wang, wang2c9@mail.uc.edu, University of Cincinnati
+Sean Kennedy, kenneds6@mail.uc.edu, Leidos
+Boyang Wang, boyang.wang@uc.edu, University of Cincinnati
