@@ -51,5 +51,7 @@ Chenggang Wang, Sean Kennedy, Haipeng Li, King Hudson, Gowtham Atluri, Xuetao We
 ## Contacts
 
 Chenggang Wang, wang2c9@mail.uc.edu, University of Cincinnati
+
 Sean Kennedy, kenneds6@mail.uc.edu, Leidos
+
 Boyang Wang, boyang.wang@uc.edu, University of Cincinnati
