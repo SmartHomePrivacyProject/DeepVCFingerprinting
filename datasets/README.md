@@ -5,9 +5,13 @@ Amazon_Echo_Dataset has 100 classes for closed-world setting and another 100 cla
 
 A list of the classes (i.e., voice commands) can be found in ./additional_info 
 
-Amazon_Echo_Dataset includes both the original pcap files captured by tcpdump and also the processed csv files which only includes timestamp, size, the direction of each packet. 
+Amazon_Echo_Dataset/traffic_alexa includes both the original pcap files captured by tcpdump and also the processed csv files (which only includes timestamp, size, the direction of each packet). 
 
-Goolge_Home_Dataset has 100 classes for closed-world setting. Each class has 1500 traffic traces. Only csv files are provided. We sadly lost the original pcap files due to the transfer of data service providers. 
+Amazon_Echo_Dataset/voice_commands_automated_alexa includes the voice recordings we used for data collection. 
+
+Goolge_Home_Dataset has 100 classes for closed-world setting. Each class has 1500 traffic traces. Both the original pcap files captured by tupdump and also the csv files are provided (which only includes timestamp, size, the direction of each packet). 
+
+Google_Home_Dataset/voice_commands_automated_google includes the voice recordings we used for data collection. 
 
 More detailed information about the datasets can be found in our WiSec20 paper. We made our dataset publicly avaliable. The data should be used for reasearch purpose only. 
 
