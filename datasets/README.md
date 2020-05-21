@@ -5,7 +5,7 @@ Amazon_Echo_Dataset has 100 classes for closed-world setting and another 100 cla
 
 A list of the classes (i.e., voice commands) can be found in ./additional_info 
 
-Amazon_Echo_Dataset/traffic_alexa includes both the original pcap files captured by tcpdump and also the processed csv files (which only includes timestamp, size, the direction of each packet). 
+'Amazon_Echo_Dataset/traffic_alexa' includes both the original pcap files captured by tcpdump and also the processed csv files (which only includes timestamp, size, the direction of each packet). 
 
 Amazon_Echo_Dataset/voice_commands_automated_alexa includes the voice recordings we used for data collection. 
 
