@@ -5,7 +5,9 @@ Amazon_Echo_Dataset has 100 classes for closed-world setting and another 100 cla
 
 A list of the classes (i.e., voice commands) can be found in ./additional_info 
 
-`Amazon_Echo_Dataset/traffic_alexa` includes both the original pcap files captured by tcpdump and also the processed csv files (which only includes timestamp, size, the direction of each packet). Invalid traces (e.g., the cases where a voice command is played corrrectly but there is no response from a smart speaker) were removed when we transfered the data from pcap files to csv files. The number of invalied traces was less than 1% of the entire data. More information can be found in our paper. 
+`Amazon_Echo_Dataset/traffic_alexa` includes both the original pcap files captured by tcpdump and also the processed csv files (which only includes timestamp, size, the direction of each packet). 
+
+Invalid traces (e.g., the cases where a voice command was played corrrectly but there was no response from a smart speaker) were removed when we transfered the data from pcap files to csv files. The number of invalied traces was less than 1% of the entire data. More information can be found in our paper. 
 
 **To run our code, please use the csv files directly.** 
 
