@@ -9,7 +9,7 @@ A list of the classes (i.e., voice commands) can be found in ./additional_info
 
 Invalid traces (e.g., the cases where a voice command was played corrrectly but there was no response from a smart speaker) were removed when we transfered the data from pcap files to csv files. The number of invalied traces was less than 1% of the entire data. More information can be found in our paper. 
 
-**To run our code, please use the csv files directly.** 
+**To run our code, please use the csv files directly.** The timestamp information was not used in our attack code, the numeric format uses both size and direction and the binary format uses direction only. 
 
 `Amazon_Echo_Dataset/voice_commands_automated_alexa` includes the voice recordings we used for data collection. 
 
