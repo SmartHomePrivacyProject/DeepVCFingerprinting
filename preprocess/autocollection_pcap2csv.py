@@ -1,8 +1,4 @@
 #!/usr/bin/env python
-"""
-@Author: Haipeng Li
-
-"""
 
 import ipaddress
 import sys
@@ -11,8 +7,6 @@ import pandas as pd
 import csv
 from scapy.all import *
 # from scapy_ssl_tls.ssl_tls import TLS
-
-
 
 
 def pcap_converter(pcap_path, echo_ip, burst_ranges, dst):
@@ -37,10 +31,6 @@ def pcap_converter(pcap_path, echo_ip, burst_ranges, dst):
     # echo_df = pd.DataFrame(columns=['time', 'size', 'direction','protocol'])
     echo_df = pd.DataFrame(columns=['time', 'size', 'direction'])
     p_list.reverse()
-
-    # pp = p_list[170][TLS].fields['records'].overloaded_fields['content_type']
-    # p = p_list[208][TLS]
-
     echo_packets = []
     for p in p_list:
         # p.show()
@@ -124,19 +114,6 @@ def burst_detector_short(packet_path, echo_ip):
 
 def main(argv):
 
-
-    # pa_path = argv[3]
-    # pa_path =  'raw_traffic_alexa_2nd_round/'
-    # ch_path = '1'
-    # echo_ip = '10.63.1.144'
-    # dst = '1'
-
-    # p_path = 'raw_pcap/amazon_echo/' + pa_path + ch_path + '/'
-    # p_path = 'raw_pcap/amazon_echo/a/1/'
-    # print(p_path)
-    # files = os.listdir(p_path)
-    # files.sort()
-    # for f in files:
     pcap_path = argv[0]
     echo_ip = argv[1]
     dst = argv[2]
@@ -160,28 +137,12 @@ def main(argv):
     # print('There are {} bursts with packet number ranges of {}'.format(len(ranges), ranges))
     # print('Using ranges to convert pcap files to CSV trace files...')
 
-
-    # ranges = [(9, 3229), (3324, 6525), (6554, 10117),(10140,13499),(13526,16935)]
     if end_index > 50:
         pcap_converter(pcap_path, echo_ip, ranges, dst)
         print(dst + ' ' + pf.name)
-    # if end_index <= 3:
-    #     with open("stats/abc.csv",'a') as _in:
-    #         writer = csv.writer(_in)
-    #         writer.writerow(pf)
-    # print('CSV files generated.  Saved to csv/ directory.')
-
 
 if __name__ == "__main__":
-
-    # path = 'raw_pcap/amazon_echo/April/output_0331_1500_announce_happy_valentines_day/output/Announce_Happy_Valentines_Day_??_Google_0_.pcap'
-    path = 'raw_pcap/open_the_box_of_cats_25_.pcap'
-    ip = '10.63.7.115'
-    r = burst_detector_short(path,ip)
-    ranges = (0,r)
-    dst = '3nd/1'
-    pcap_converter(path, ip, ranges, dst)
-    # main(sys.argv[1:])
-    # main()
+    main(sys.argv[1:])
+    
 
 
