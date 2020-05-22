@@ -7,7 +7,7 @@ A list of the classes (i.e., voice commands) can be found in ./additional_info
 
 `Amazon_Echo_Dataset/traffic_alexa` includes both the original pcap files captured by tcpdump and also the processed csv files (which only includes timestamp, size, the direction of each packet). 
 
-*To run our code, please use the csv files.* 
+#To run our code, please use the csv files.# 
 
 `Amazon_Echo_Dataset/voice_commands_automated_alexa` includes the voice recordings we used for data collection. 
 
