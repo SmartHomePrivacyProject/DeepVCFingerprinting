@@ -23,6 +23,6 @@ Goolge_Home_Dataset has 100 classes for closed-world setting. Each class has 150
 
 More detailed information about the datasets can be found in our WiSec20 paper. We made our dataset publicly avaliable. The data should be used for reasearch purpose only. 
 
-Amazon_Echo_Dataset: https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EqtkhDKpukxFmDgpJpQsJjcBakmkxoTnaq3PYYLK1_97Bg?e=Igvejc
+Amazon_Echo_Dataset: https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EqtkhDKpukxFmDgpJpQsJjcBakmkxoTnaq3PYYLK1_97Bg?e=QoUKCx
 
-Google_Home_Dataset: https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EuNkaOqv6shIt8QEuudLkyMByHHwN8ai-dWr07DeKe7qcw?e=EB9Qzu
+Google_Home_Dataset: https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EuNkaOqv6shIt8QEuudLkyMByHHwN8ai-dWr07DeKe7qcw?e=ZZDRiE
