@@ -115,10 +115,10 @@ In addition to the physical setup described above, you need to have a csv file c
 
 ### Generating Audio Files 
 
-Use the generate_audio_queries.py script to produce mp3 files that contain the queries the speaker will play.  By default the wake work used is "Alexa, " and the voice used is the default Google text-to-speech US-English Female voice.
+Use the generate_audio_queries.py script to produce mp3 files that contain the queries the speaker will play.  By default the wake work used is "Alexa, " and the voice used is the default Google text-to-speech US-English Female voice. The `--wake_word` argument can be used to specify the wake-up word and `--voice` can be used to specify which voice can be used (either `joanna`, `salli`, `matt`, `ivy`, `kevin`, `justin`, `kimberly`, `kendra` or `joey`). Note that these AWS Polly voices require valid AWS credentials.
 
 ```bash
-python3 generate_audio_queries.py data/queries.csv 
+./generate_audio_queries.py [--voice voice] [--wake-word word] data/queries.csv 
 ```
 
 ### Capturing Network Traffic Data of Smart Speaker Interactions
@@ -126,7 +126,7 @@ python3 generate_audio_queries.py data/queries.csv
 Use the speaker_collect.py script to start the platform. You need to specify the CSV File that contains the columns Query and Time, corresponding to the query and interaction time, the  directory containing the audio query files, the device's IP address, and the number of captures to collect for each query.
 
 ```bash
-sudo python3 speaker_collect.py data/file.csv voice_queries/ 192.192.192.192 100
+sudo ./speaker_collect.py data/file.csv voice_queries/ 192.192.192.192 100
 ```
 
 

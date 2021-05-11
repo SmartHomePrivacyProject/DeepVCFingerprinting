@@ -28,6 +28,11 @@ salli = False
 matt = False
 joey = False
 polly = False
+kendra = False
+ivy = False
+kimberly = False
+justin = False
+kevin = False
 
 # Set flags if using the Polly voices
 if args.voice == 'joanna':
@@ -45,6 +50,26 @@ elif args.voice == 'matt':
 elif args.voice == 'joey':
     print('Using Polly Joey Voice')
     joey = True
+    polly = True
+elif args.voice == 'kendra':
+    print('Using Polly Joey Voice')
+    kendra = True
+    polly = True
+elif args.voice == 'ivy':
+    print('Using Polly Joey Voice')
+    ivy = True
+    polly = True
+elif args.voice == 'kimberly':
+    print('Using Polly Joey Voice')
+    kimberly = True
+    polly = True
+elif args.voice == 'justin':
+    print('Using Polly Joey Voice')
+    justin = True
+    polly = True
+elif args.voice == 'kevin':
+    print('Using Polly Joey Voice')
+    kevin = True
     polly = True
 
 # Set default wakeword as Alexa, i.e. Amazon Echo Devices
@@ -94,6 +119,51 @@ for q in queries['Query']:
         elif joey:
             f_name = 'voice_queries/amazon/polly/joey/_' + q_file + "_.mp3"
             response = polly_client.synthesize_speech(VoiceId='Joey',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+
+        elif kendra:
+            f_name = 'voice_queries/amazon/polly/kendra/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Kendra',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+
+        elif ivy:
+            f_name = 'voice_queries/amazon/polly/ivy/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Ivy',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+
+        elif kimberly:
+            f_name = 'voice_queries/amazon/polly/kimberly/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Kimberly',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        
+        elif justin:
+            f_name = 'voice_queries/amazon/polly/justin/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Justin',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+
+        elif kimberly:
+            f_name = 'voice_queries/amazon/polly/kevin/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Kevin',
                                                       OutputFormat='mp3',
                                                       Text=text_to_read + "              ")
             file = open(f_name, 'wb')
