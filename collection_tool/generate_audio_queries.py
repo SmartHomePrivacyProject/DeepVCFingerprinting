@@ -1,8 +1,11 @@
+#!/bin/env python3
+
 import boto3
-import pandas as pd
 import config
+import pandas as pd
 import argparse
 from gtts import gTTS
+
 """
 CLI Script that generates audio files for a list of queries.  Can generate 5 different text to speach voicese
 from Google and AWS services. Be sure to add AWS credentials if you plan to use the AWS Polly voices.
