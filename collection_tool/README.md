@@ -126,7 +126,7 @@ Also, ensure `~/.aws/config` contains a valid region (tested with `eu-west-2`):
 
 ```
 [default]
-region=us-east-1
+region=eu-west-2
 ```
 
 ```bash
