@@ -161,7 +161,7 @@ for q in queries['Query']:
             file.write(response['AudioStream'].read())
             file.close()
 
-        elif kimberly:
+        elif kevin:
             f_name = 'voice_queries/amazon/polly/kevin/_' + q_file + "_.mp3"
             response = polly_client.synthesize_speech(VoiceId='Kevin',
                                                       OutputFormat='mp3',
@@ -169,6 +169,8 @@ for q in queries['Query']:
             file = open(f_name, 'wb')
             file.write(response['AudioStream'].read())
             file.close()
+        else:
+            print("Invalid name.")
 
     else:
         f_name = 'voice_queries/amazon/google_voice_default/_' + q_file + "_.mp3"
