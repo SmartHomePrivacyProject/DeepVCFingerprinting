@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import boto3
-import config
 import pandas as pd
 import argparse
 from gtts import gTTS
@@ -33,6 +32,7 @@ ivy = False
 kimberly = False
 justin = False
 kevin = False
+russell = False
 
 # Set flags if using the Polly voices
 if args.voice == 'joanna':
@@ -70,6 +70,10 @@ elif args.voice == 'justin':
 elif args.voice == 'kevin':
     print('Using Polly Kevin Voice')
     kevin = True
+    polly = True
+elif args.voice == 'russell':
+    print('Using Polly Russell Voice')
+    russell = True
     polly = True
 
 # Set default wakeword as Alexa, i.e. Amazon Echo Devices
@@ -162,6 +166,14 @@ for q in queries['Query']:
             f_name = 'voice_queries/amazon/polly/kevin/_' + q_file + "_.mp3"
             response = polly_client.synthesize_speech(VoiceId='Kevin',
                                                       Engine="neural",
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        elif russell:
+            f_name = 'voice_queries/amazon/polly/russell/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Russell',
                                                       OutputFormat='mp3',
                                                       Text=text_to_read + "              ")
             file = open(f_name, 'wb')
