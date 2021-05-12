@@ -129,6 +129,8 @@ Also, ensure `~/.aws/config` contains a valid region (tested with `eu-west-2`):
 region=eu-west-2
 ```
 
+Each generated `mp3` query will be stored in `voice_queries/amazon/VOICE_NAME/QUERY_NAME.mp3`.
+
 ```bash
 ./generate_audio_queries.py [--voice voice] [--wake-word word] data/queries.csv 
 ```
