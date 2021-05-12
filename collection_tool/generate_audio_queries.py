@@ -52,23 +52,23 @@ elif args.voice == 'joey':
     joey = True
     polly = True
 elif args.voice == 'kendra':
-    print('Using Polly Joey Voice')
+    print('Using Polly Kendra Voice')
     kendra = True
     polly = True
 elif args.voice == 'ivy':
-    print('Using Polly Joey Voice')
+    print('Using Polly Ivy Voice')
     ivy = True
     polly = True
 elif args.voice == 'kimberly':
-    print('Using Polly Joey Voice')
+    print('Using Polly Kimberly Voice')
     kimberly = True
     polly = True
 elif args.voice == 'justin':
-    print('Using Polly Joey Voice')
+    print('Using Polly Justin Voice')
     justin = True
     polly = True
 elif args.voice == 'kevin':
-    print('Using Polly Joey Voice')
+    print('Using Polly Kevin Voice')
     kevin = True
     polly = True
 
