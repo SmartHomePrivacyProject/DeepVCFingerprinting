@@ -85,10 +85,7 @@ for q in queries['Query']:
     text_to_read = default_wake_word + '  ,   ' + q
     q_file = q.replace(" ", "_")
     if polly:
-        polly_client = boto3.Session(
-            aws_access_key_id=config.aws_access_key_id,
-            aws_secret_access_key=config.aws_secret_access_key,
-            region_name='eu-west-2').client('polly')
+        polly_client = boto3.client('polly')
         if joanna:
             f_name = 'voice_queries/amazon/polly/joanna/_' + q_file + "_.mp3"
             response = polly_client.synthesize_speech(VoiceId='Joanna',
@@ -164,6 +161,7 @@ for q in queries['Query']:
         elif kevin:
             f_name = 'voice_queries/amazon/polly/kevin/_' + q_file + "_.mp3"
             response = polly_client.synthesize_speech(VoiceId='Kevin',
+                                                      Engine="neural",
                                                       OutputFormat='mp3',
                                                       Text=text_to_read + "              ")
             file = open(f_name, 'wb')
