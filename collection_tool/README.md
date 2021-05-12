@@ -115,7 +115,19 @@ In addition to the physical setup described above, you need to have a csv file c
 
 ### Generating Audio Files 
 
-Use the generate_audio_queries.py script to produce mp3 files that contain the queries the speaker will play.  By default the wake work used is "Alexa, " and the voice used is the default Google text-to-speech US-English Female voice. The `--wake_word` argument can be used to specify the wake-up word and `--voice` can be used to specify which voice can be used (either `joanna`, `salli`, `matt`, `ivy`, `kevin`, `justin`, `kimberly`, `kendra` or `joey`). Note that these AWS Polly voices require valid AWS credentials.
+Use the generate_audio_queries.py script to produce mp3 files that contain the queries the speaker will play.  By default the wake work used is "Alexa, " and the voice used is the default Google text-to-speech US-English Female voice. The `--wake_word` argument can be used to specify the wake-up word and `--voice` can be used to specify which voice can be used (either `joanna`, `salli`, `matt`, `ivy`, `kevin`, `justin`, `kimberly`, `kendra` or `joey`). Note that these AWS Polly voices require valid AWS  credentials. To setup the credentials, ensure that `~/.aws/credentials` contains:
+
+```
+[default]
+aws_access_key_id = YOUR_ACCESS_KEY
+aws_secret_access_key = YOUR_SECRET_KEY
+```
+Also, ensure `~/.aws/config` contains a valid region (tested with `eu-west-2`):
+
+```
+[default]
+region=us-east-1
+```
 
 ```bash
 ./generate_audio_queries.py [--voice voice] [--wake-word word] data/queries.csv 
