@@ -33,6 +33,13 @@ kimberly = False
 justin = False
 kevin = False
 russell = False
+amy = False
+emma = False
+brian = False
+nicole = False
+olivia = False
+aditi = False
+raveena = False
 
 # Set flags if using the Polly voices
 if args.voice == 'joanna':
@@ -74,6 +81,34 @@ elif args.voice == 'kevin':
 elif args.voice == 'russell':
     print('Using Polly Russell Voice')
     russell = True
+    polly = True
+elif args.voice == 'amy':
+    print('Using Polly Amy Voice')
+    amy = True
+    polly = True
+elif args.voice == 'emma':
+    print('Using Polly Emma Voice')
+    emma = True
+    polly = True
+elif args.voice == 'brian':
+    print('Using Polly Brian Voice')
+    brian = True
+    polly = True
+elif args.voice == 'nicole':
+    print('Using Polly Nicole Voice')
+    nicole = True
+    polly = True
+elif args.voice == 'olivia':
+    print('Using Polly Olivia Voice')
+    olivia = True
+    polly = True
+elif args.voice == 'aditi':
+    print('Using Polly Aditi Voice')
+    aditi = True
+    polly = True
+elif args.voice == 'raveena':
+    print('Using Polly Raveena Voice')
+    raveena = True
     polly = True
 
 # Set default wakeword as Alexa, i.e. Amazon Echo Devices
@@ -174,6 +209,63 @@ for q in queries['Query']:
         elif russell:
             f_name = 'voice_queries/amazon/polly/russell/_' + q_file + "_.mp3"
             response = polly_client.synthesize_speech(VoiceId='Russell',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        elif amy:
+            f_name = 'voice_queries/amazon/polly/amy/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Amy',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        elif emma:
+            f_name = 'voice_queries/amazon/polly/emma/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Emma',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        elif brian:
+            f_name = 'voice_queries/amazon/polly/brian/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Brian',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        elif nicole:
+            f_name = 'voice_queries/amazon/polly/nicole/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Nicole',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        elif olivia:
+            f_name = 'voice_queries/amazon/polly/olivia/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Olivia',
+                                                      Engine="neural",  
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        elif aditi:
+            f_name = 'voice_queries/amazon/polly/aditi/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Aditi',
+                                                      OutputFormat='mp3',
+                                                      Text=text_to_read + "              ")
+            file = open(f_name, 'wb')
+            file.write(response['AudioStream'].read())
+            file.close()
+        elif raveena:
+            f_name = 'voice_queries/amazon/polly/raveena/_' + q_file + "_.mp3"
+            response = polly_client.synthesize_speech(VoiceId='Raveena',
                                                       OutputFormat='mp3',
                                                       Text=text_to_read + "              ")
             file = open(f_name, 'wb')
