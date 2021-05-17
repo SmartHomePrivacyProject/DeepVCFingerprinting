@@ -14,7 +14,7 @@ In order to set up a speaker data collection platform the following items are re
 - Raspberry Pi setup as Wireless Access Point
 
 ### Setting up the Raspberry Pi
-The Raspberry Pi needs to be configured as a wireless access point. This setup is assuming that the Raspberry Pi is connected to the router via ethernet cable.
+The Raspberry Pi needs to be configured as a wireless access point. This setup is assuming that the Raspberry Pi is using the Raspbian OS and is connected to the router via ethernet cable.
 
 On a Raspberry Pi running Raspbian OS, install `bridge-utils`, `dnsmasq` and `hostapd`:
 
@@ -101,7 +101,6 @@ bridge_ports eth0 wlan0
 ```
 
 Test the newly created access point by attempting to connect to it with a smartphone or other device.
-
 
 ### Setting up the Smart Speaker
 Hold down the action button on the Amazon Echo until an orange ring appears to enter setup mode. With the Alex app, connect the Amazon Echo to the newly created wireless access point with the credentials you created in the `/etc/hostapd/hostapd.conf` file.

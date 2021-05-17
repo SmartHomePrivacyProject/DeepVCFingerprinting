@@ -10,7 +10,9 @@ CLI Script that generates audio files for a list of queries.  Can generate 5 dif
 from Google and AWS services. Be sure to add AWS credentials if you plan to use the AWS Polly voices.
 """
 
-# Get args from CLI
+# Get args from CLI. There are two different arguments that can be passed to the program: 
+# "--wake_word", which specifies which word will be used in the generated audio file to wake up the smart device
+# "--voice", which specifies which voice to use. Amazon Polly has numerous English-speaking voices to choose from.
 parser = argparse.ArgumentParser()
 parser.add_argument("csv", help='A CSV file with queries with a column labeled Query')
 parser.add_argument('--wake_word', help='The wake word that initiates an interaction with the device, default is '
@@ -21,7 +23,7 @@ parser.add_argument('--voice', help='Specify which voice to use.  Defaults to th
 args = parser.parse_args()
 csv_path = args.csv
 
-# Five possible voices
+# Flags for all the possible voices. They get turned on if the user passes that specific voice in.
 joanna = False
 salli = False
 matt = False
@@ -111,7 +113,7 @@ elif args.voice == 'raveena':
     raveena = True
     polly = True
 
-# Set default wakeword as Alexa, i.e. Amazon Echo Devices
+# Set default wakeword as Alexa, i.e. Amazon Echo Devices. Can be changed by user.
 default_wake_word = "Alexa "
 if args.wake_word is not None:
     default_wake_word = args.wake_word + " "
@@ -119,7 +121,7 @@ if args.wake_word is not None:
 # Read in the query list from a csv file containing a list of queries
 queries = pd.read_csv(csv_path)
 
-# Iterate through the query list and generate the correct mp3 audio files cor
+# Iterate through the query list and generate the correct mp3 audio files corresponding to the query
 for q in queries['Query']:
     text_to_read = default_wake_word + '  ,   ' + q
     q_file = q.replace(" ", "_")
