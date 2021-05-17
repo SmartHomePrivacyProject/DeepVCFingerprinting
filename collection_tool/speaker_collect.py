@@ -25,7 +25,7 @@ def driver(query_path : str, q_time : int, q_name : str, device_ip, iterations :
         ## start_index = 200
         j = i + start_index
        
-        # Sets the default inteface
+        # Sets the default inteface of br0
         interface = 'br0'
         
         ## disabled by Boyang
@@ -34,6 +34,7 @@ def driver(query_path : str, q_time : int, q_name : str, device_ip, iterations :
         print('Starting capture...')
         
         ## change i to j 
+        # Opens up tcpdump to copy the traffic send from smart device/server
         capture = subprocess.Popen("sudo timeout " + str(q_time) + " tcpdump -i " + str(interface) + " -n host " + str(
             device_ip) + " -w " + "/home/pi/speaker-crawler/output/" + str(q_name) + str(
             j) + "_" + ".pcap", shell=True)
@@ -43,11 +44,12 @@ def driver(query_path : str, q_time : int, q_name : str, device_ip, iterations :
         play_audio = subprocess.Popen(["mplayer", query_path])
         capture.wait()
         print('Interaction captured')
-        
+        # Sleep to allow smart device to finish speaking
+        time.sleep(5)
         ## change i to j 
         print("Capture File Saved, iter=" + str(j))
 
-
+# Set up command line options
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('csv',
@@ -61,7 +63,8 @@ if __name__ == "__main__":
     parser.add_argument('start', help='Start index of traffic trace')
     
     args = parser.parse_args()
-
+    
+    # Open the csv file and parse query/time
     with open(args.csv) as csv_file:
         q_names = []
         q_times = []
@@ -72,7 +75,8 @@ if __name__ == "__main__":
 
     device_ip = args.device_ip
     query_directory = args.mp3_fp
-
+    
+    # Create list of files
     q_files = [f for f in listdir(query_directory) if isfile(join(query_directory, f))]
     q_files = sorted(q_files, key=lambda s: s.casefold())
     n_iter = int(args.iter)
