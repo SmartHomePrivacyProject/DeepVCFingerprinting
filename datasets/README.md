@@ -25,8 +25,10 @@ More detailed information about the datasets can be found in our WiSec20 paper. 
 
 The links for the datasets can be found below (**last modified: Sept, 2021**)
 
-Amazon_Echo_Dataset: https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EqtkhDKpukxFmDgpJpQsJjcBakmkxoTnaq3PYYLK1_97Bg?e=ATmJ3S
+Amazon_Echo_Dataset: 
+https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EqtkhDKpukxFmDgpJpQsJjcBakmkxoTnaq3PYYLK1_97Bg?e=ATmJ3S
 
-Google_Home_Dataset: https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EuNkaOqv6shIt8QEuudLkyMByHHwN8ai-dWr07DeKe7qcw?e=Fu1HFq
+Google_Home_Dataset:
+https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EuNkaOqv6shIt8QEuudLkyMByHHwN8ai-dWr07DeKe7qcw?e=Fu1HFq
 
 **Note:** the above links need to be updated every 6 months due to certain settings of OneDrive. If you find the links are expired and you cannot access the data, please feel free to email us (boyang.wang@uc.edu). We will be update the links as soon as we can. Thanks! 
