@@ -1,5 +1,5 @@
 pandas==0.25.0
-tensorflow==1.14.0
+tensorflow==2.7.2
 numpy==1.13.3
 nni==0.9.1.1
 Keras==2.2.4
