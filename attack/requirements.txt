@@ -1,6 +1,6 @@
 pandas==0.25.0
 tensorflow==1.14.0
-numpy==1.13.3
+numpy==1.22.0
 nni==0.9.1.1
 Keras==2.2.4
 mytools==1.1.3
