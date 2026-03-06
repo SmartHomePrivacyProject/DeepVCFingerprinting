@@ -23,14 +23,14 @@ Goolge_Home_Dataset has 100 classes for closed-world setting. Each class has 150
 
 More detailed information about the datasets can be found in our WiSec20 paper. We made our dataset publicly avaliable. The data should be used for reasearch purpose only. 
 
-The links for the datasets can be found below (**last modified: June, 2025**)
+The links for the datasets can be found below (**last modified: March, 2026**)
 
 Amazon_Echo_Dataset: 
 
-https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EqtkhDKpukxFmDgpJpQsJjcBakmkxoTnaq3PYYLK1_97Bg?e=65QffQ
+https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/IgCrZIQyqbpMRZg4KSaULCY3AWpJpMaE52qtz2GCytf_ewY?e=rb45zl
 
 Google_Home_Dataset:
 
-https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/EuNkaOqv6shIt8QEuudLkyMByHHwN8ai-dWr07DeKe7qcw?e=PWkElN
+https://mailuc-my.sharepoint.com/:f:/g/personal/wang2ba_ucmail_uc_edu/IgDjZGjqr-rISLfEBLrnS5MjAchx8DfGovnVq9Ow3inu6nM?e=z7mxYF
 
 **Note:** the above links need to be updated every 6 months due to certain settings of OneDrive. If you find the links are expired and you cannot access the data, please feel free to email us (boyang.wang@uc.edu). We will be update the links as soon as we can. Thanks! 
